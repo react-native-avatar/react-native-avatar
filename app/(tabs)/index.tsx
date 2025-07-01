@@ -1,19 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Pressable, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>텍스트</Text>
-    </View>
+    <SafeAreaView>
+      <Pressable>
+        <Text>홈스크린</Text>
+      </Pressable>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "yellow",
-  },
-  text: {
-    color: "red",
-    fontSize: 30,
-  },
-});
