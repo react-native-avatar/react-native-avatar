@@ -26,6 +26,15 @@ export default function AuthLayout() {
         options={{
           title: "이메일 로그인",
           headerShown: true,
+          headerBackButtonDisplayMode: "minimal", // ios 에서 뒤로가기 버튼을 최소화
+        }}
+      />
+      <Stack.Screen
+        name="signup"
+        options={{
+          title: "회원가입",
+          headerShown: true,
+          headerBackButtonDisplayMode: "minimal", // ios 에서 뒤로가기 버튼을 최소화
         }}
       />
     </Stack>
