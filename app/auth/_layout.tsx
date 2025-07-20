@@ -1,12 +1,15 @@
 import { colors } from "@/constants";
 import Foundation from "@expo/vector-icons/Foundation";
 import { Link, Stack } from "expo-router";
+
 export default function AuthLayout() {
   return (
     <Stack
       screenOptions={{
         headerTintColor: colors.BLACK,
-        contentStyle: { backgroundColor: colors.WHITE },
+        contentStyle: {
+          backgroundColor: colors.WHITE,
+        },
       }}
     >
       <Stack.Screen

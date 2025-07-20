@@ -1,7 +1,6 @@
 import CustomButton from "@/components/CustomButton";
 import { Link, router } from "expo-router";
-import { Image, StyleSheet, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Image, SafeAreaView, StyleSheet, View } from "react-native";
 
 export default function AuthScreen() {
   return (
@@ -34,14 +33,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flex: 2,
   },
-  logo: {
-    width: 122,
-    height: 122,
-  },
-
   buttonContainer: {
     paddingHorizontal: 32,
     flex: 1,
+  },
+  logo: {
+    width: 112,
+    height: 112,
   },
   signupText: {
     textAlign: "center",
