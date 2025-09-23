@@ -47,4 +47,18 @@ async function createVote({
   return data;
 }
 
-export { createPost, createVote, deletePost, getPost, getPosts, updatePost };
+async function likePost(id: number): Promise<number> {
+  const { data } = await axiosInstance.post(`/likes/${id}`);
+
+  return data;
+}
+
+export {
+  createPost,
+  createVote,
+  deletePost,
+  getPost,
+  getPosts,
+  likePost,
+  updatePost,
+};
